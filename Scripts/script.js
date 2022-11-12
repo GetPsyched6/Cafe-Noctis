@@ -5,6 +5,7 @@ let cart = document.querySelector(".cart");
 let howMuch = document.querySelector(".how_much");
 let item = document.querySelector(".item");
 let bought = document.querySelector(".btn_buy");
+let buy_now = document.querySelector(".open_cart");
 let number = 0;
 
 ctr_btn.forEach((ctrButton) => {
@@ -29,8 +30,13 @@ ctr_btn.forEach((ctrButton) => {
 			cart.addEventListener("click", () => {
 				window.open("../Pages/buynow.html", "_self");
 			});
+			buy_now.addEventListener("click", () => {
+				window.open("../Pages/buynow.html", "_self");
+			});
+			buy_now.style.transform = `translateY(0%)`;
 		} else {
 			notif.style.display = "none";
+			buy_now.style.transform = `translateY(300%)`;
 		}
 		if (child.value >= "1") {
 			number++;
@@ -55,6 +61,6 @@ if (bought)
 	bought.addEventListener("click", () => {
 		bought.innerHTML = `<div class="lds-ring"><div></div><div></div><div></div><div></div></div>`;
 		setTimeout(() => {
-			window.open("../Pages/thanks.html","_self")
+			window.open("../Pages/thanks.html", "_self");
 		}, 3000);
 	});
