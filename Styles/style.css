@@ -144,13 +144,19 @@ main {
 	color: var(--clr-700);
 }
 
+.title.xl {
+	font-size: clamp(1.4rem, 8vw + 1.6rem, 4rem);
+}
+
 .btn_wrapper {
 	display: flex;
 	justify-content: center;
 }
 
 .btn {
-	height: 80px;
+	height: 100px;
+	font-size: 1.4rem;
+	line-height: 100px;
 	background-color: var(--clr-200);
 	color: var(--clr-700);
 	aspect-ratio: 1 / 1;
@@ -171,6 +177,7 @@ main {
 .btn_buy {
 	position: relative;
 	aspect-ratio: 2 / 1;
+	line-height: 50px;
 }
 
 .btn_buy:hover {
@@ -261,8 +268,6 @@ span {
 	text-align: center;
 	font-size: larger;
 	cursor: default;
-	user-select: none;
-	-webkit-user-select: none;
 }
 
 input {
@@ -295,7 +300,7 @@ footer {
 }
 .lds-ring div {
 	position: absolute;
-	top: 24%;
+	top: 35%;
 	left: 25%;
 	width: 40px;
 	height: 40px;
@@ -324,7 +329,7 @@ footer {
 
 @media (max-width: 900px) {
 	main {
-		top: 25vh;
+		top: 22.5vh;
 	}
 }
 
