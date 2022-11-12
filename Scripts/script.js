@@ -27,7 +27,7 @@ ctr_btn.forEach((ctrButton) => {
 		if (child.value >= "1") {
 			notif.style.display = "inline";
 			cart.addEventListener("click", () => {
-				window.open("./buynow.html", "_self");
+				window.open("../Pages/buynow.html", "_self");
 			});
 		} else {
 			notif.style.display = "none";
@@ -55,6 +55,6 @@ if (bought)
 	bought.addEventListener("click", () => {
 		bought.innerHTML = `<div class="lds-ring"><div></div><div></div><div></div><div></div></div>`;
 		setTimeout(() => {
-			window.open("./thanks.html","_self")
+			window.open("../Pages/thanks.html","_self")
 		}, 3000);
 	});
